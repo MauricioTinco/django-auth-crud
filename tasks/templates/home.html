@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="container py-1">
+    <div class="slider text-center">
+        <ul>
+            <li>
+                {% load static %}
+                <link rel="stylesheet" href="{% static 'css/task.css' %}">
+                <img src="{% static 'img/ima1.jpg' %}">
+            </li>
+            <li>
+                <img src="{% static 'img/ima2.jpg' %}">
+            </li>
+            <li>
+                <img src="{% static 'img/ima3.jpg' %}">
+            </li>
+            <li>
+                <img src="{% static 'img/ima4.jpg' %}">
+            </li>
+        </ul>
+    </div>
+    <br><br><br>
+    <section class="card card-body my-3">
+        <div class="row">
+            <div class="col col-8">
+                <h1 class="display-1 text-center">
+                    Nuestra Historia
+                </h1>
+                <p class="text-center">
+                    En nuestros inicios, desde el año 2001, partimos brindando el servicio de elaboración, suministro y bombeo de concreto premezclado, logrando atender a las principales obras de construcción de la ciudad. <br>
+
+En la constante búsqueda de ofrecer productos de alta calidad, ampliamos nuestra cartera de productos y así en el 2012, se presentó al mercado peruano CEMENTO NACIONAL, un producto de alta calidad en tres presentaciones Tipo I (Alta resistencia), ICo (Super Trababilidad) y HS (Antisalitre).
+
+<br> Este importante y significativo paso que nos permitió continuar en el 2017 con nuestra apuesta por el sector, incrementando nuestra cartera de productos, es así como se incluyen los productos prefabricados de concreto, como los sistemas de losas aligeradas con viguetas pretensadas PRELISTOS. Productos complementarios que brindan soporte en los trabajos de construcción, todos ideales para su utilización en el segmento de viviendas, oficinas e industria.
+
+ <br> En la actualidad, somos una de las más importantes y reconocidas empresas proveedoras de soluciones para la construcción del país.
+Contamos con reconocidas marcas y tipos de productos y servicios ideales para la construcción, atendiendo y satisfaciendo efectivamente las necesidades de todos nuestros clientes.
+
+ <br> Nuestras obras culminadas, la calidad de nuestros productos y servicios, pero, sobre todo, los testimonios de nuestros clientes son la mejor garantía y evidencia de nuestro trabajo.</p>
+            </div>
+            <div class="col col-4">
+                <img class="img-fluid" src="{% static 'img/cami.jpg' %}">
+            </div>
+        </div>        
+    </section>
+    <br><br><br>
+    <section class="my-5">
+        <h3 class="text-center display-3" >
+            Nosotros
+        </h3>
+        <br>
+        <div class="row text-center">
+            <div class="col ml-1">
+                <h1 class="display-5 text-center">
+                    Visión
+                </h1>
+                <img class="mis mx-2 my-4" src="{% static 'img/vision.jpg' %}" alt="" srcset="">
+                <p>
+                    Brindar soluciones para la construcción enfocadas en la elaboración, suministro y bombeo de concreto premezclado, así como de producción y comercialización de cementos, mezclas secas embolsadas y prefabricados de concreto. Ideales para el segmento de viviendas, oficinas e industria.</p>
+            </div>
+            <div class="col ml-1">
+                <h1 class="display-5 text-center">
+                    Misión
+                </h1>
+                <img class="mis mx-2 my-4" src="{% static 'img/mision.jpg' %}" alt="" srcset="">
+                <p>
+                    Ser una empresa líder en el sector de concreto premezclado a nivel nacional, diferenciándonos en nuestros tres pilares: confianza, servicio personalizado y excelencia en el producto; con un alto grado de responsabilidad hacia nuestra sociedad, medio ambiente y aporte al desarrollo de nuestro país. </p>
+            </div>            
+        </div>        
+    </section>
+</main>
+<style>
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+
+    animation: cambio 10s infinite alternate;
+    animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    max-width: 1000px;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+</style>
+{% endblock %}

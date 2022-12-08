@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center centrop">
+            Producto Mixercon
+        </h1>
+        <div class="container-fluid d-inline-flex justify-content-center">
+            <link rel="stylesheet" href="{% static 'css/task.css' %}">
+            <img src="{% static 'img/nacional.png' %}" class="imgpri" alt="" srcset="">
+        </div>
+        <p>
+            Nuestra unidad de negocio de cemento, produce y comercializa cemento altamente resistente. <br>
+Nuestro portafolio está compuesto por 5 tipos de cementos, cada uno diseñado para solucionar una necesidad específica en los diferentes procesos constructivos que tiene un país tan diverso como el nuestro.
+<br> Seguimos estrictos procesos productivos enfocados en obtener un producto de excelente calidad que cumpla con la NTP Norma Técnica Peruana y la ASTM Sociedad Americana para Pruebas y Materiales para que todos los peruanos podamos construir nuestro país con responsabilidad.
+        </p>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="car col-md-3">
+                <img src="{% static 'img/cei.png' %}" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cemento I</h5>
+                    <p class="card-text">Súper durable y resistente para todo tipo de construcciones.</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="car col-md-3"><img src="{% static 'img/cealba.png' %}" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cemento Albañileria</h5>
+                    <p class="card-text">Solo para tarrajeo y asentado de ladrillos. Excelentes acabados</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="car col-md-3"><img src="{% static 'img/ceip.jpg' %}" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cemento IP</h5>
+                    <p class="card-text">Súper fuerte y altamente resistente.</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="car col-md-3"><img src="{% static 'img/cehs.png' %}" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cemento HS</h5>
+                    <p class="card-text">Con protección al ataque de los sulfatos y a la humedad.</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
